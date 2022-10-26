@@ -3,3 +3,7 @@ os: linux
 files:
   - source: /
     destination: /java-app
+hooks:
+  ApplicationStart:
+    - location: run-jar.sh   
+    
