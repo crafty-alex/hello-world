@@ -7,11 +7,9 @@ env:
 phases:
   install:
     commands:
-    - echo installing maven...
-    - yum install maven
+    - yum -y install maven
   build:
     commands:
-    - echo building the app
     - mvn install
 artifacts:
   files:
