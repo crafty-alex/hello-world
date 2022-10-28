@@ -7,5 +7,4 @@ hooks:
   ApplicationStart:
     - location: run-jar.sh   
       timeout: 180
-      runas: root
     
