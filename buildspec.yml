@@ -6,7 +6,7 @@ phases:
     - yum -y install maven
   build:
     commands:
-    - mvn install
+    - mvn clean install
 artifacts:
   files:
   - target/*.jar
