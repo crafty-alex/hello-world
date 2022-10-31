@@ -4,7 +4,9 @@ files:
   - source: /
     destination: /java-app
 hooks:
+  ApplicationStop:
+    - location: stop-jar.sh   
+      timeout: 180 
   ApplicationStart:
     - location: run-jar.sh   
       timeout: 180
-    
