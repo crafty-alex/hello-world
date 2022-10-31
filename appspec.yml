@@ -14,6 +14,8 @@ hooks:
   ApplicationStop:
     - location: stop-jar.sh   
       timeout: 180 
+      runas: ec2-user
   ApplicationStart:
     - location: run-jar.sh   
       timeout: 180
+      runas: ec2-user
