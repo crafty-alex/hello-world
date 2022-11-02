@@ -26,6 +26,6 @@ class HelloControllerTest {
             .andDo(print())
             .andReturn();
     String contentAsString = result.getResponse().getContentAsString();
-    assertEquals("Hello World", contentAsString);
+    assertEquals("Hello Worldxxx", contentAsString);
   }
 }
