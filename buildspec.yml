@@ -28,7 +28,7 @@ phases:
     - if [ $(jq -r '.projectStatus.status' result.json) = ERROR ] ; then $CODEBUILD_BUILD_SUCCEEDING -eq 0 ;fi
   post_build:
     commands:
-    - if [ $CODEBUILD_BUILD_SUCCEEDING -eq 1 ] && [ $CODEBUILD_SOURCE_VERSION -eq main ] ; then mvn -Dmaven.test.skip=true deploy ;fi  
+    - if [ $CODEBUILD_BUILD_SUCCEEDING -eq 1 ] ; then mvn -Dmaven.test.skip=true deploy ;fi  
     
 artifacts:
   files:
