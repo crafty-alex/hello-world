@@ -52,7 +52,7 @@
          <repository>
                   <id>codeartifact</id>
                   <name>codeartifact</name>
-                  <url>https://alex-769875773379.d.codeartifact.us-east-1.amazonaws.com/maven/java-repo/</url>
+                  <url>https://alex-558079945686.d.codeartifact.us-east-1.amazonaws.com/maven/java-repo/</url>
          </repository>
 </distributionManagement>
 
