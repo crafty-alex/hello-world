@@ -9,7 +9,6 @@
     <packaging>jar</packaging>
 
     <name>test-app</name>
-
          
     <parent>
         <groupId>org.springframework.boot</groupId>
