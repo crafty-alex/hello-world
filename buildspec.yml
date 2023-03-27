@@ -26,6 +26,9 @@ phases:
     - curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=$Project > result.json
     - cat result.json
     - if [ $(jq -r '.projectStatus.status' result.json) = ERROR ] ; then $CODEBUILD_BUILD_SUCCEEDING -eq 0 ;fi
+  #post_build:
+    #commands:
+    #- if [ $CODEBUILD_BUILD_SUCCEEDING -eq 1 ]  && [ $CODEBUILD_INITIATOR == "codepipeline/java-app-codepipeline" ] ; then mvn -Dmaven.test.skip=true deploy ;fi  
   
     
 artifacts:
